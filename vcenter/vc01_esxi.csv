@@ -1,0 +1,12 @@
+DataCenter;Cluster;HostName;Manufacture;Serial Number;ESXi Version;CPU Model;CPU Core;Memory(GB);NICs;CPUUsage;MemUsage(GB);Status
+Data Center1;Prod_DC1;esxi01.demo.test;PowerEdge R710;1HWW33J;ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5670;12;256;8;34;200;
+Data Center1;QA_DC1;esxi02.demo.test;PowerEdge 2950;5766Y3J;ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5450;4;256;8;12;140;
+Data Center1;QA_DC1;esxi03.demo.test;PowerEdge 2970;F77884J;ESXi 4.1.0 Update 1 build-348481;Quad Core AMD Opteron 2378;8;256;8;30;120;
+Data Center1;Prod_DC1;esxi04.demo.test;PowerEdge R710;55745J;ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5660;12;256;8;41;33;
+Data Center1;Prod_DC1;esxi05.demo.test;PowerEdge R710;CQ7745J;ESXi 5.0.0 GA build-504890;Intel Xeon X5660;12;256;8;64;55;
+Data Center1;Prod_DC1;esxi06.demo.test;PowerEdge R710;HHLH47J;ESXi 5.0.0 GA build-504890;Intel Xeon X5660;12;256;8;43;67;
+Data Center1;Prod_DC1;esxi07.demo.test;PowerEdge R720;884FD5J;ESXi 5.0.0 GA build-504890;Quad Core AMD Opteron 2378;8;256;8;12;56;
+Data Center1;QA_DC1;esxi08.demo.test;PowerEdge R720;89S99X1;ESXi 5.0.0 GA build-504890;Intel Xeon E5-26650;16;256;8;43;86;
+Data Center1;Prod_DC1;esxi09.demo.test;PowerEdge R720;00S09X2;ESXi 5.0.0 GA build-504890;Intel Xeon E5-26650;16;512;8;25;102;
+Data Center1;QA_DC1;esxi10.demo.test;Proliant X220;00S89X2;ESXi 5.0.0 GA build-504890;Intel Xeon X5660;16;512;8;45;350;
+Data Center1;Prod_DC1;esxi11.demo.test;Proliant X220;09S09X2;ESXi 5.0.0 GA build-504890;Intel Xeon E5-26650;32;512;8;65;310;

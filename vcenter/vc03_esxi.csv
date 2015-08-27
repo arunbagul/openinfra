@@ -1,0 +1,10 @@
+DataCenter;Cluster;HostName;Manufacture;Serial Number;ESXi Version;CPU Model;CPU Core;Memory(GB);NICs;CPUUsage;MemUsage(GB);Status
+Data Center3;QA_DC3;esxi19.demo.test;PowerEdge R710;KLWW33J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5670;12;98;2;0;0;
+Data Center3;QA_DC3;esxi20.demo.test;PowerEdge 2950;KL66Y3J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5450;4;16;2;0;0;
+Data Center3;Dev_DC3;esxi21.demo.test;PowerEdge 2970;LK7884J;VMware ESXi 4.1.0 Update 1 build-348481;Quad Core AMD Opteron 2378;8;32;2;0;0;
+Data Center3;Prod_DC3;esxi22.demo.test;PowerEdge R710;LK745J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5660;12;98;2;0;0;
+Data Center3;Prod_DC3;esxi23.demo.test;PowerEdge R710;KL7745J;VMware ESXi 5.0.0 GA build-504890;Intel Xeon X5660;12;98;2;0;0;
+Data Center3;Prod_DC3;esxi24.demo.test;PowerEdge R710;KLLH47J;VMware ESXi 5.0.0 GA build-504890;Intel Xeon X5660;12;98;2;0;0;
+Data Center3;Dev_DC3;esxi25.demo.test;PowerEdge R720;KL4FD5J;VMware ESXi 5.0.0 GA build-504890;Quad Core AMD Opteron 2378;8;32;2;0;0;
+Data Center3;Prod_DC3;esxi26.demo.test;PowerEdge R720;KLS99X1;VMware ESXi 5.0.0 GA build-504890;Intel Xeon E5-26650;16;262;2;0;0;
+Data Center3;Prod_DC3;esxi27.demo.test;PowerEdge R720;KLS09X2;VMware ESXi 5.0.0 GA build-504890;Intel Xeon E5-26650;16;147;2;0;0;

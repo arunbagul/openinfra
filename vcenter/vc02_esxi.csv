@@ -1,0 +1,8 @@
+DataCenter;Cluster;HostName;Manufacture;Serial Number;ESXi Version;CPU Model;CPU Core;Memory(GB);NICs;CPUUsage;MemUsage(GB);Status
+Data Center2;Prod_DC2;esxi12.demo.test;PowerEdge R710;B5WW77J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5670;32;256;8;44;12;
+Data Center2;Dev_DC2;esxi13.demo.test;PowerEdge 2950;T806Y3J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5450;32;256;8;33;33;
+Data Center2;Prod_DC2;esxi14.demo.test;PowerEdge 2970;F477884J;VMware ESXi 4.1.0 Update 1 build-348481;Quad Core AMD Opteron 2378;32;256;8;23;64;
+Data Center2;Dev_DC2;esxi15.demo.test;PowerEdge R710;P78745J;VMware ESXi 4.1.0 Update 1 build-348481;Intel Xeon X5660;32;256;8;55;87;
+Data Center2;Prod_DC2;esxi16.demo.test;PowerEdge R710;GQ7555J;VMware ESXi 5.0.0 GA build-504890;Intel Xeon X5660;32;512;8;75;123;
+Data Center2;Dev_DC2;esxi17.demo.test;PowerEdge R710;AFH47J;VMware ESXi 5.0.0 GA build-504890;Intel Xeon X5660;16;256;8;22;47;
+Data Center2;Prod_DC2;esxi18.demo.test;Proliant 2550;8UYFD5J;VMware ESXi 5.0.0 GA build-504890;Quad Core AMD Opteron 2378;16;256;8;12;70;
