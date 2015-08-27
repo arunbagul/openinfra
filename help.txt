@@ -1,3 +1,0 @@
-Simply add "footer-fixed" class to the body element. 
-Simply add "layout-boxed" class to the body element. 
-Simply add "navigation-small" class to the body element.
