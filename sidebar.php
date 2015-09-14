@@ -98,10 +98,20 @@
 			</a>
 			<ul class="sub-menu">
 				<li>
-					<a href="hw.php?child=devices">
+					<a href="hw.php?child=ipam">
+						<span class="title">IPAM</span>
+					</a>
+				</li>
+				<li>
+					<a href="hw.php?child=phy">
 						<span class="title">Physical Servers</span>
 					</a>
 				</li>
+                                <li>
+                                        <a href="hw.php?child=vm">
+                                                <span class="title">Virtual Servers</span>
+                                        </a>
+                                </li>
 				<li>
 					<a href="hw.php?child=reports">
 						<span class="title">Inventory Reports</span>
