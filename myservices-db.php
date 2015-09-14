@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=db'>DB</a>"
+				text: "<a href='gnoc.php?child=foundation&services=db'>DB</a>"
 			},
 			exporting: {
 				enabled: false

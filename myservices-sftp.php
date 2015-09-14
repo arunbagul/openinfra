@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=sftp'>SFTP</a>"
+				text: "<a href='gnoc.php?child=foundation&services=sftp'>SFTP</a>"
 			},
 			exporting: {
 				enabled: false

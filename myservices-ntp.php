@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=ntp'>NTP</a>"
+				text: "<a href='gnoc.php?child=foundation&services=ntp'>NTP</a>"
 			},
 			exporting: {
 				enabled: false

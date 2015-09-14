@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=storage'>Storage</a>"
+				text: "<a href='gnoc.php?child=foundation&services=storage'>Storage</a>"
 			},
 			exporting: {
 				enabled: false

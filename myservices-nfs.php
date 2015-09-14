@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=nfs-fs'>NFS-FS</a>"
+				text: "<a href='gnoc.php?child=foundation&services=nfs-fs'>NFS-FS</a>"
 			},
 			tooltip: {
 				pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

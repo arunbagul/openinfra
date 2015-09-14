@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?customer=gold'>Cloud Customers(50)</a>"
+				text: "<a href='gnoc.php?child=apps&type=gold'>Cloud Customers(50)</a>"
 			},
 			tooltip: {
 				pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

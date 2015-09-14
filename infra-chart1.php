@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?infra=host'>Host Status (1000)</a>"
+				text: "<a href='gnoc.php?child=infra&type=host'>Host Status (1000)</a>"
 			},
 			tooltip: {
 				pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

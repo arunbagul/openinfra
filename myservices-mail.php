@@ -8,7 +8,7 @@
 			},
 			title: {
 				useHTML: true,
-				text: "<a href='?services=mail'>Mail</a>"
+				text: "<a href='gnoc.php?child=foundation&services=mail'>Mail</a>"
 			},
 			exporting: {
 				enabled: false
