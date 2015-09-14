@@ -62,72 +62,96 @@
 			</div>
 			<div class="panel-body">
 
-			<?php include_once('gnoc-chart1.php'); ?>
-			<div class='col-md-12' id='gnoc_chart' style='min-width: 300px; height: 450px; margin: 0 auto'></div>
-
-			<br><h4>OverAll SLA Status</h4>
-			<table style='font-size: 12px; width: 70%;' class='table table-striped table-bordered table-hover' id='sample-table-1'>
-			<?php
-				list($DCArr,$ClsArr)= vClusterStats($DATACENTER,$vCENTER_DATA);
-				//echo "<pre>"; print_r($DCArr); echo "</pre><br><br>";
-				//echo "<pre>"; print_r($ClsArr); echo "</pre>";
+			<?php 
+			  if (isset($_GET['type']) or isset($_GET['services'])) {
+				echo "<table style='font-size: 12px; width: 70%;' class='table table-striped table-bordered table-hover' id='sample-table-1'>";
 				echo "<thead><tr>";
-					echo "<th>Datacenter</th>";
-					echo "<th>Host#</th>";
-					echo "<th>HostCPU#</th>";
-					echo "<th>HostMemory(GB)#</th>";
-					echo "<th>TotalVMs</th>";
-					echo "<th>VMvCPU#</th>";
-					echo "<th>VMMem (GB)#</th>";
-					echo "<th>PowerOn_VMs</th>";
-					echo "<th>PowerOff_VMs</th>";					
+				echo "<th>Alert Name</th>";
+				echo "<th>Host</th>";
+				echo "<th>Status</th>";
+				echo "<th>Action</th>";
+				echo "<th>Comment</th>";
 				echo "</tr></thead>";
 				echo "<tbody>";
-				$TOTAL_HOST = 0;
-				$TOTAL_CPU = 0; 
-				$TOTAL_MEM = 0;
-				$TOTAL_VMS = 0;
-				$TOTAL_VM_CPU = 0;
-				$TOTAL_VM_MEM = 0;
-				$TOTAL_VM_ON = 0;
-				$TOTAL_VM_OFF = 0;
-				foreach($DCArr as $key => $line) {
-					$myDC = $DATACENTER[$key]['NAME'];
-					echo "<tr>";
-					echo "<td>".$myDC."</td>";
-					echo "<td>".$line['HOST']."</td>";
-					echo "<td>".$line['CPU']."</td>";
-					echo "<td>".$line['MEM']."</td>";
-					echo "<td>".$line['VM_COUNT']."</td>";
-					echo "<td>".$line['VM_CPU']."</td>";
-					echo "<td>".$line['VM_MEM']."</td>";
-					echo "<td>".$line['VM_POWERON']."</td>";
-					echo "<td>".$line['VM_POWEROFF']."</td>";					
-					echo "</tr>";
-					$TOTAL_HOST = $TOTAL_HOST + $line['HOST'];
-					$TOTAL_CPU = $TOTAL_CPU + $line['CPU']; 
-					$TOTAL_MEM = $TOTAL_MEM + $line['MEM'];
-					$TOTAL_VMS = $TOTAL_VMS + $line['VM_COUNT'];
-					$TOTAL_VM_CPU = $TOTAL_VM_CPU + $line['VM_CPU'];
-					$TOTAL_VM_MEM = $TOTAL_VM_MEM + $line['VM_MEM'];
-					$TOTAL_VM_ON = $TOTAL_VM_ON + $line['VM_POWERON'];
-					$TOTAL_VM_OFF = $TOTAL_VM_OFF + $line['VM_POWEROFF'];					
-				}
-				//total of all DCs
-				echo "<tr style='background-color: yellow;'>";
-				echo "<td><b>OVERALL TOTAL</b></td>";
-				echo "<td>".$TOTAL_HOST."</td>";
-				echo "<td>".$TOTAL_CPU."</td>";
-				echo "<td>".$TOTAL_MEM."</td>";
-				echo "<td>".$TOTAL_VMS."</td>";
-				echo "<td>".$TOTAL_VM_CPU."</td>";
-				echo "<td>".$TOTAL_VM_MEM."</td>";
-				echo "<td>".$TOTAL_VM_ON."</td>";
-				echo "<td>".$TOTAL_VM_OFF."</td>";
-				echo "</tr>";				
+				echo "<tr>";
+				   echo "<td>proc_Apache</td> <td>app101</td> <td>CRIT</td>"; 
+				   echo "<td><button class='btn btn-purple'>Action via Chef <i class='fa fa-arrow-circle-right'></i></button></td>";
+ 				   echo "<td> Apache not Running, Acked by arunb</td>";
+				echo "</tr>";
+				echo "<tr>";
+				   echo "<td>Port_80</td> <td>app101</td> <td>CRIT</td>";
+				   echo "<td><button class='btn btn-purple'>Telnet to Port <i class='fa fa-arrow-circle-right'></i></button></td>";
+				   echo "<td> Web Server Port 80 Connection refused, Acked by arunb</td>";
+				echo "</tr>";
 				echo "</tbody>";				
+				echo "</table>";
+			  } else {
+				include_once('gnoc-chart1.php');
+				echo "<div class='col-md-12' id='gnoc_chart' style='min-width: 300px; height: 450px; margin: 0 auto'></div>";
+
+				echo "<br><h4>OverAll SLA Status</h4>";
+				echo "<table style='font-size: 12px; width: 70%;' class='table table-striped table-bordered table-hover' id='sample-table-1'>";
+					list($DCArr,$ClsArr)= vClusterStats($DATACENTER,$vCENTER_DATA);
+					//echo "<pre>"; print_r($DCArr); echo "</pre><br><br>";
+					//echo "<pre>"; print_r($ClsArr); echo "</pre>";
+					echo "<thead><tr>";
+						echo "<th>Datacenter</th>";
+						echo "<th>Host#</th>";
+						echo "<th>HostCPU#</th>";
+						echo "<th>HostMemory(GB)#</th>";
+						echo "<th>TotalVMs</th>";
+						echo "<th>VMvCPU#</th>";
+						echo "<th>VMMem (GB)#</th>";
+						echo "<th>PowerOn_VMs</th>";
+						echo "<th>PowerOff_VMs</th>";					
+					echo "</tr></thead>";
+					echo "<tbody>";
+					$TOTAL_HOST = 0;
+					$TOTAL_CPU = 0; 
+					$TOTAL_MEM = 0;
+					$TOTAL_VMS = 0;
+					$TOTAL_VM_CPU = 0;
+					$TOTAL_VM_MEM = 0;
+					$TOTAL_VM_ON = 0;
+					$TOTAL_VM_OFF = 0;
+					foreach($DCArr as $key => $line) {
+						$myDC = $DATACENTER[$key]['NAME'];
+						echo "<tr>";
+						echo "<td>".$myDC."</td>";
+						echo "<td>".$line['HOST']."</td>";
+						echo "<td>".$line['CPU']."</td>";
+						echo "<td>".$line['MEM']."</td>";
+						echo "<td>".$line['VM_COUNT']."</td>";
+						echo "<td>".$line['VM_CPU']."</td>";
+						echo "<td>".$line['VM_MEM']."</td>";
+						echo "<td>".$line['VM_POWERON']."</td>";
+						echo "<td>".$line['VM_POWEROFF']."</td>";					
+						echo "</tr>";
+						$TOTAL_HOST = $TOTAL_HOST + $line['HOST'];
+						$TOTAL_CPU = $TOTAL_CPU + $line['CPU']; 
+						$TOTAL_MEM = $TOTAL_MEM + $line['MEM'];
+						$TOTAL_VMS = $TOTAL_VMS + $line['VM_COUNT'];
+						$TOTAL_VM_CPU = $TOTAL_VM_CPU + $line['VM_CPU'];
+						$TOTAL_VM_MEM = $TOTAL_VM_MEM + $line['VM_MEM'];
+						$TOTAL_VM_ON = $TOTAL_VM_ON + $line['VM_POWERON'];
+						$TOTAL_VM_OFF = $TOTAL_VM_OFF + $line['VM_POWEROFF'];					
+					}
+					//total of all DCs
+					echo "<tr style='background-color: yellow;'>";
+					echo "<td><b>OVERALL TOTAL</b></td>";
+					echo "<td>".$TOTAL_HOST."</td>";
+					echo "<td>".$TOTAL_CPU."</td>";
+					echo "<td>".$TOTAL_MEM."</td>";
+					echo "<td>".$TOTAL_VMS."</td>";
+					echo "<td>".$TOTAL_VM_CPU."</td>";
+					echo "<td>".$TOTAL_VM_MEM."</td>";
+					echo "<td>".$TOTAL_VM_ON."</td>";
+					echo "<td>".$TOTAL_VM_OFF."</td>";
+					echo "</tr>";				
+					echo "</tbody>";				
+				echo "</table>";
+			  }
 			?>
-			</table>
 			</div>
 		</div>
 		<!-- end: DYNAMIC TABLE PANEL -->

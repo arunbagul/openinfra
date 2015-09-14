@@ -24,21 +24,21 @@ $(function () {
                     enabled: true
                 },
                 enableMouseTracking: false,
-		stacking: 'percent',
+		//stacking: 'percent',
             }
         },
         series: [
 		{
 		    name: 'infra',
-		    data: [60,70,93,91,80,60,70,80,95.30,99.99]
+		    data: [75,70,93,91,80,88,70,80,95.30,99.99]
 		}, 
 		{
 		    name: 'infra',
-		    data: [60,88,99,80,96,96,98,85,99.5,99.10]
+		    data: [60,88,99,80,96,96,98,89,99.5,98.10]
 		},
 		{
 		    name: 'foundation',
-		    data: [90,85,30,40,50,60,98,85,99.5,99.10]
+		    data: [90,65,82,40,50,75,93,85,89.5,97.10]
 		}
 	]
     });

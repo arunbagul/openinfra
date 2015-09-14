@@ -6,6 +6,9 @@
 	<!--<![endif]-->
 <?php
 	include_once('header.php');
+	include_once('javascripts.php');
+	include_once('config_dc.php');
+	include_once('vcenter/libvcenter.php');
 ?>
 	<!-- start: BODY -->
 	<body class='navigation-small'>
@@ -64,6 +67,9 @@
 
 
 					<!-- start: PAGE CONTENT -->
+					  <?php
+						include_once('gnoc-body.php');
+					  ?>
 
 					<!-- end: PAGE CONTENT-->					
 					
