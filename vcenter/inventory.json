@@ -1,0 +1,1660 @@
+{
+  "results": 6,
+  "rows": [
+    {
+      "appserver01.world": {
+        "os_version": "2.6.32-431.20.3.el6.x86_64",
+        "os": "linux",
+        "platform_family": "rhel",
+        "platform_version": "6.5",
+        "platform": "redhat",
+        "kernel.name": "Linux",
+        "kernel.release": "2.6.32-431.20.3.el6.x86_64",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#1 SMP Fri Jun 6 18:30:54 EDT 2014",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "16436",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown"
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:9C:5D:7F": {
+                  "family": "lladdr"
+                },
+                "192.168.36.26": {
+                  "family": "inet",
+                  "prefixlen": "22",
+                  "netmask": "255.255.252.0",
+                  "broadcast": "192.168.39.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.36.1": "00:00:0c:07:ac:01"
+              },
+              "routes": [
+                {
+                  "destination": "192.168.36.0/22",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.36.26"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.36.1"
+                },
+                {
+                  "destination": "192.168.36.0/22",
+                  "family": "inet6",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.36.26"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet6",
+                  "via": "192.168.36.1"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.36.1",
+          "default_inet6_interface": "eth0",
+          "default_inet6_gateway": "192.168.36.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-100",
+            "UUID": "421C2D0B-D297-9126-99D4-4B8BE08F1105",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": "appserver01.world",
+        "memory": {
+          "swap": {
+            "cached": "0kB",
+            "total": "2064376kB",
+            "free": "2064376kB"
+          },
+          "total": "4048880kB",
+          "free": "851772kB",
+          "buffers": "507052kB",
+          "cached": "1507916kB",
+          "active": "2363068kB",
+          "inactive": "554188kB",
+          "dirty": "312kB",
+          "writeback": "0kB",
+          "anon_pages": "902428kB",
+          "mapped": "95516kB",
+          "slab": "215528kB",
+          "slab_reclaimable": "184408kB",
+          "slab_unreclaim": "31120kB",
+          "page_tables": "17080kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "4088816kB",
+          "committed_as": "3576396kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "160076kB",
+          "vmalloc_chunk": "34359564480kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2393.973",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "unfair_spinlock",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dts"
+            ]
+          },
+          "1": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2393.973",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "unfair_spinlock",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dts"
+            ]
+          },
+          "total": 2,
+          "real": 0
+        }
+      }
+    },
+    {
+      "host1": {
+        "os_version": "3.8.0-29-generic",
+        "os": "linux",
+        "platform_family": "debian",
+        "platform_version": "12.04",
+        "platform": "ubuntu",
+        "kernel.name": "Linux",
+        "kernel.release": "3.8.0-29-generic",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#42~precise1-Ubuntu SMP Wed Aug 14 16:19:23 UTC 2013",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "65536",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown"
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:9E:34:BA": {
+                  "family": "lladdr"
+                },
+                "192.168.92.105": {
+                  "family": "inet",
+                  "prefixlen": "19",
+                  "netmask": "255.255.224.0",
+                  "broadcast": "192.168.95.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.94.200": "00:50:56:9e:47:ac",
+                "192.168.64.1": "00:00:0c:07:ac:bd"
+              },
+              "routes": [
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.64.1"
+                },
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.92.105"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.64.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-101",
+            "UUID": "421E0A48-4F0E-C5FE-61FA-972FBFA81BBF",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": null,
+        "memory": {
+          "swap": {
+            "cached": "0kB",
+            "total": "524284kB",
+            "free": "524284kB"
+          },
+          "total": "1011648kB",
+          "free": "70860kB",
+          "buffers": "58948kB",
+          "cached": "602580kB",
+          "active": "406716kB",
+          "inactive": "410420kB",
+          "dirty": "32kB",
+          "writeback": "0kB",
+          "anon_pages": "155604kB",
+          "mapped": "16456kB",
+          "slab": "93228kB",
+          "slab_reclaimable": "77948kB",
+          "slab_unreclaim": "15280kB",
+          "page_tables": "2788kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "1030108kB",
+          "committed_as": "181884kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "143176kB",
+          "vmalloc_chunk": "34359593052kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2394.030",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "total": 1,
+          "real": 0
+        }
+      }
+    },
+    {
+      "appserver02.world": {
+        "os_version": "2.6.32-431.20.3.el6.x86_64",
+        "os": "linux",
+        "platform_family": "rhel",
+        "platform_version": "6.5",
+        "platform": "redhat",
+        "kernel.name": "Linux",
+        "kernel.release": "2.6.32-431.20.3.el6.x86_64",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#1 SMP Fri Jun 6 18:30:54 EDT 2014",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "16436",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown"
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:9E:47:AC": {
+                  "family": "lladdr"
+                },
+                "192.168.94.200": {
+                  "family": "inet",
+                  "prefixlen": "19",
+                  "netmask": "255.255.224.0",
+                  "broadcast": "192.168.95.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.64.1": "00:00:0c:07:ac:bd",
+                "192.168.92.105": "00:50:56:9e:34:ba",
+                "192.168.76.163": "00:50:56:ac:72:a2",
+                "192.168.86.244": "00:50:56:9e:52:0b",
+                "192.168.68.229": "00:50:56:ac:34:fa"
+              },
+              "routes": [
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.94.200"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.64.1"
+                },
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet6",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.94.200"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet6",
+                  "via": "192.168.64.1"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.64.1",
+          "default_inet6_interface": "eth0",
+          "default_inet6_gateway": "192.168.64.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-102",
+            "UUID": "421EA219-825B-1DD7-F04D-6704224CC359",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": "appserver02.world",
+        "memory": {
+          "swap": {
+            "cached": "452kB",
+            "total": "2064376kB",
+            "free": "2048812kB"
+          },
+          "total": "2046580kB",
+          "free": "180540kB",
+          "buffers": "76956kB",
+          "cached": "597312kB",
+          "active": "958264kB",
+          "inactive": "740288kB",
+          "dirty": "392kB",
+          "writeback": "0kB",
+          "anon_pages": "1023928kB",
+          "mapped": "81516kB",
+          "slab": "116604kB",
+          "slab_reclaimable": "84564kB",
+          "slab_unreclaim": "32040kB",
+          "page_tables": "20668kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "3087664kB",
+          "committed_as": "2571924kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "152324kB",
+          "vmalloc_chunk": "34359581272kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2393.979",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "unfair_spinlock",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dts"
+            ]
+          },
+          "1": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2393.979",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "unfair_spinlock",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dts"
+            ]
+          },
+          "total": 2,
+          "real": 0
+        }
+      }
+    },
+    {
+      "pacemaker1": {
+        "os_version": "2.6.32-431.20.3.el6.x86_64",
+        "os": "linux",
+        "platform_family": "rhel",
+        "platform_version": "6.5",
+        "platform": "redhat",
+        "kernel.name": "Linux",
+        "kernel.release": "2.6.32-431.20.3.el6.x86_64",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#1 SMP Fri Jun 6 18:30:54 EDT 2014",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "16436",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown"
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:AC:34:FA": {
+                  "family": "lladdr"
+                },
+                "192.168.68.229": {
+                  "family": "inet",
+                  "prefixlen": "19",
+                  "netmask": "255.255.224.0",
+                  "broadcast": "192.168.95.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.94.200": "00:50:56:9e:47:ac",
+                "192.168.64.1": "00:00:0c:07:ac:bd"
+              },
+              "routes": [
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.68.229"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.64.1"
+                },
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet6",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.68.229"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link",
+                  "metric": "1002"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet6",
+                  "via": "192.168.64.1"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.64.1",
+          "default_inet6_interface": "eth0",
+          "default_inet6_gateway": "192.168.64.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-103",
+            "UUID": "422C3BFD-E2A7-5876-0C62-2EAEB80AA9F7",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": null,
+        "memory": {
+          "swap": {
+            "cached": "620kB",
+            "total": "2064376kB",
+            "free": "2060484kB"
+          },
+          "total": "1012344kB",
+          "free": "180048kB",
+          "buffers": "31684kB",
+          "cached": "470528kB",
+          "active": "366404kB",
+          "inactive": "367984kB",
+          "dirty": "65088kB",
+          "writeback": "0kB",
+          "anon_pages": "231808kB",
+          "mapped": "15704kB",
+          "slab": "76276kB",
+          "slab_reclaimable": "51472kB",
+          "slab_unreclaim": "24804kB",
+          "page_tables": "3668kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "2570548kB",
+          "committed_as": "239076kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "149444kB",
+          "vmalloc_chunk": "34359582532kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2397.400",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "up",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "unfair_spinlock",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dts"
+            ]
+          },
+          "total": 1,
+          "real": 0
+        }
+      }
+    },
+    {
+      "appserver03.world": {
+        "os_version": "3.0.101-0.35-default",
+        "os": "linux",
+        "platform_family": "suse",
+        "platform_version": "11.3",
+        "platform": "suse",
+        "kernel.name": "Linux",
+        "kernel.release": "3.0.101-0.35-default",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#1 SMP Wed Jul 9 11:43:04 UTC 2014 (c36987d)",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "16436",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "broadcast": "127.255.255.255",
+                  "scope": "Node"
+                },
+                "127.0.0.2": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "broadcast": "127.255.255.255",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown",
+              "routes": [
+                {
+                  "destination": "127.0.0.0/8",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "127.0.0.0/8",
+                  "family": "inet6",
+                  "scope": "link"
+                }
+              ]
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:AC:72:A2": {
+                  "family": "lladdr"
+                },
+                "192.168.76.163": {
+                  "family": "inet",
+                  "prefixlen": "19",
+                  "netmask": "255.255.224.0",
+                  "broadcast": "192.168.95.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.94.200": "00:50:56:9e:47:ac",
+                "192.168.64.1": "00:00:0c:07:ac:bd"
+              },
+              "routes": [
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.64.1"
+                },
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.76.163"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet6",
+                  "via": "192.168.64.1"
+                },
+                {
+                  "destination": "192.168.64.0/19",
+                  "family": "inet6",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.76.163"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.64.1",
+          "default_inet6_interface": "eth0",
+          "default_inet6_gateway": "192.168.64.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-104",
+            "UUID": "422CC1E3-5894-5DD1-5C95-5C7AF3E0EF03",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": "appserver03.world",
+        "memory": {
+          "swap": {
+            "cached": "0kB",
+            "total": "2080764kB",
+            "free": "2080764kB"
+          },
+          "total": "16330332kB",
+          "free": "15076988kB",
+          "buffers": "109312kB",
+          "cached": "667532kB",
+          "active": "476472kB",
+          "inactive": "512228kB",
+          "dirty": "224kB",
+          "writeback": "0kB",
+          "anon_pages": "211256kB",
+          "mapped": "167432kB",
+          "slab": "71392kB",
+          "slab_reclaimable": "41988kB",
+          "slab_unreclaim": "29404kB",
+          "page_tables": "6252kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "10245928kB",
+          "committed_as": "1491088kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "182352kB",
+          "vmalloc_chunk": "34359552960kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2397.400",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "1": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2397.400",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "2": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2397.400",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "3": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2397.400",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "total": 4,
+          "real": 0
+        }
+      }
+    },
+    {
+      "host2": {
+        "os_version": "3.0.101-0.35-default",
+        "os": "linux",
+        "platform_family": "suse",
+        "platform_version": "11.3",
+        "platform": "suse",
+        "kernel.name": "Linux",
+        "kernel.release": "3.0.101-0.35-default",
+        "kernel.machine": "x86_64",
+        "kernel.version": "#1 SMP Wed Jul 9 11:43:04 UTC 2014 (c36987d)",
+        "network": {
+          "interfaces": {
+            "lo": {
+              "mtu": "16436",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Loopback",
+              "addresses": {
+                "127.0.0.1": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "broadcast": "127.255.255.255",
+                  "scope": "Node"
+                },
+                "127.0.0.2": {
+                  "family": "inet",
+                  "prefixlen": "8",
+                  "netmask": "255.0.0.0",
+                  "broadcast": "127.255.255.255",
+                  "scope": "Node"
+                }
+              },
+              "state": "unknown",
+              "routes": [
+                {
+                  "destination": "127.0.0.0/8",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "127.0.0.0/8",
+                  "family": "inet6",
+                  "scope": "link"
+                }
+              ]
+            },
+            "eth0": {
+              "type": "eth",
+              "number": "0",
+              "mtu": "1500",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "encapsulation": "Ethernet",
+              "addresses": {
+                "00:50:56:9C:67:FC": {
+                  "family": "lladdr"
+                },
+                "192.168.38.194": {
+                  "family": "inet",
+                  "prefixlen": "22",
+                  "netmask": "255.255.252.0",
+                  "broadcast": "192.168.39.255",
+                  "scope": "Global"
+                }
+              },
+              "state": "up",
+              "arp": {
+                "192.168.36.1": "00:00:0c:07:ac:01"
+              },
+              "routes": [
+                {
+                  "destination": "default",
+                  "family": "inet",
+                  "via": "192.168.36.1"
+                },
+                {
+                  "destination": "192.168.36.0/22",
+                  "family": "inet",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.38.194"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet",
+                  "scope": "link"
+                },
+                {
+                  "destination": "default",
+                  "family": "inet6",
+                  "via": "192.168.36.1"
+                },
+                {
+                  "destination": "192.168.36.0/22",
+                  "family": "inet6",
+                  "scope": "link",
+                  "proto": "kernel",
+                  "src": "192.168.38.194"
+                },
+                {
+                  "destination": "169.254.0.0/16",
+                  "family": "inet6",
+                  "scope": "link"
+                }
+              ]
+            }
+          },
+          "default_interface": "eth0",
+          "default_gateway": "192.168.36.1",
+          "default_inet6_interface": "eth0",
+          "default_inet6_gateway": "192.168.36.1"
+        },
+        "dmi.system.all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-105",
+            "UUID": "421CFF96-A896-8968-1BDF-62C1444EE770",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "fqdn": "host2.world",
+        "memory": {
+          "swap": {
+            "cached": "28kB",
+            "total": "2080764kB",
+            "free": "2080696kB"
+          },
+          "total": "1013924kB",
+          "free": "68420kB",
+          "buffers": "66912kB",
+          "cached": "571660kB",
+          "active": "462232kB",
+          "inactive": "347752kB",
+          "dirty": "13752kB",
+          "writeback": "0kB",
+          "anon_pages": "171408kB",
+          "mapped": "20252kB",
+          "slab": "106484kB",
+          "slab_reclaimable": "80172kB",
+          "slab_unreclaim": "26312kB",
+          "page_tables": "3632kB",
+          "nfs_unstable": "0kB",
+          "bounce": "0kB",
+          "commit_limit": "2587724kB",
+          "committed_as": "234008kB",
+          "vmalloc_total": "34359738367kB",
+          "vmalloc_used": "148728kB",
+          "vmalloc_chunk": "34359587548kB"
+        },
+        "cpu": {
+          "0": {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "47",
+            "model_name": "Intel(R) Xeon(R) CPU E7- 4870  @ 2.40GHz",
+            "stepping": "2",
+            "mhz": "2394.003",
+            "cache_size": "30720 KB",
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "dts",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "syscall",
+              "nx",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "up",
+              "arch_perfmon",
+              "pebs",
+              "bts",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "aperfmperf",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "cx16",
+              "sse4_1",
+              "sse4_2",
+              "x2apic",
+              "popcnt",
+              "aes",
+              "hypervisor",
+              "lahf_lm",
+              "ida",
+              "arat",
+              "epb",
+              "dtherm"
+            ]
+          },
+          "total": 1,
+          "real": 0
+        }
+      }
+    }
+  ]
+}
