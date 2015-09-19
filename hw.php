@@ -64,7 +64,9 @@
 
 
 					<!-- start: PAGE CONTENT -->
-
+					  <?php
+						include_once('hw-body.php');
+					  ?>
 					<!-- end: PAGE CONTENT-->					
 					
 				</div>
